@@ -1,0 +1,107 @@
+/* Adapted from Jon Barron's website stylesheet */
+
+/* General styling */
+a {
+  color: #1772d0;
+  text-decoration: none;
+}
+
+a:focus,
+a:hover {
+  color: #f09228;
+  text-decoration: none;
+}
+
+body,
+td,
+th,
+tr,
+p,
+a {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+strong {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+h2 {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 22px;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+
+h3 {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  margin: 10px 0 0 0;
+  padding: 0;
+}
+
+/* Name styling */
+name {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 32px;
+}
+
+/* Paper title styling */
+.papertitle {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+/* Image hover effect */
+.one {
+  width: 160px;
+  height: 160px;
+  position: relative;
+}
+
+.two {
+  width: 160px;
+  height: 160px;
+  position: absolute;
+  transition: opacity .2s ease-in-out;
+  -moz-transition: opacity .2s ease-in-out;
+  -webkit-transition: opacity .2s ease-in-out;
+  opacity: 0;
+}
+
+/* Responsive design */
+@media only screen and (max-width: 600px) {
+  body,
+  td,
+  th,
+  tr,
+  p,
+  a {
+    font-size: 13px;
+  }
+  
+  .papertitle {
+    font-size: 13px;
+  }
+  
+  name {
+    font-size: 24px;
+  }
+  
+  h2 {
+    font-size: 18px;
+  }
+  
+  h3 {
+    font-size: 14px;
+  }
+  
+  .one, .two {
+    width: 120px;
+    height: 120px;
+  }
+}
